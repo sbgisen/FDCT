@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="fdct" type="node.py" name="depth_completion" output="screen">
+    <remap from="~rgb" to="/soar/head_camera/rgb/image_rect"/>
+    <remap from="~depth" to="/soar/head_camera/depth_registered/image_rect"/>
+  </node>
+</launch>
